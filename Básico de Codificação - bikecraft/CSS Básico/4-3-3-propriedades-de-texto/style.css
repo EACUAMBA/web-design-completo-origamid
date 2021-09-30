@@ -1,0 +1,31 @@
+p{
+background-color: cornflowerblue;
+  color: #123456; /*cor do texto*/
+font-size: 1.2rem; /*Tamanho da font*/
+font-weight: 900; /*Peso da font, importancia na frase, negrito e finura*/
+font-family: Georgia, 'Times New Roman', Times, serif; /*Familia da font*/
+text-align: center; /*Alinhamento das palavras no bloco*/
+letter-spacing: 5px; /*Espaço entre as letrar conhecido como tracking*/
+line-height: -10px; /*Altura da linha*/
+
+white-space: pre-wrap;/*Determina se o texo deve ou não se quebrar.*/
+word-spacing: 20px; /*Espaço entre as palavras*/
+
+
+text-decoration: overline;/*Decoração do texto, linha em baixo, cima, travessar*/
+text-decoration-color: red; /*Cor da linha*/
+text-decoration-skip: 20pc; /*Tamanho da linha*/
+text-decoration-style: dashed;/*Tipo de decoração*/
+text-decoration-thickness: 20px;/*Espessura da linha*/
+
+text-transform: uppercase;/*Tranformador do texto para */
+text-shadow: 2px 2px 5px aqua; /*Sombra do texto*/
+
+
+}
+
+ul{
+list-style: georgian; /*Não muito usado, define o tipo de list style podendo transformar um ul em ol*/
+list-style-type: square; /*Define os icons que aparecem antes do texto*/
+list-style-position: inside; /*Defini a posição dos icones do lado esquerdo*/
+}

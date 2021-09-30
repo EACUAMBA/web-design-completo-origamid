@@ -1,0 +1,21 @@
+.box{
+  background-color: khaki;
+width: 500px;
+padding: 100px;
+margin: 0 auto;
+}
+
+p{
+background-color: lightyellow;
+width: 100px;
+height: 100px;
+}
+.box-1{
+width: 100px;
+height: 100px;
+  background-color: lightcoral;
+border: 50px solid lightseagreen;
+margin: 25px;
+padding: 25px;
+
+}

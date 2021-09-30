@@ -1,0 +1,16 @@
+body{
+background-color: royalblue;
+color: white;
+}
+
+h1{
+  color: tomato;
+background-color: black;
+}
+
+p{
+background-color: tomato;
+color: black;
+padding: 20px;
+text-align: center;
+}

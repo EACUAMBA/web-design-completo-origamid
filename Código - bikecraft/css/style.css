@@ -1,0 +1,40 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif; /*Definindo a fonte principal e as alternativas para o elemento body e todos os seus filhos*/
+}
+
+/* Header */
+header {
+  background-color: #fec63e; /*Colocando a cor do fundo*/
+  width: 100%; /*Definindo o comprimento do bloco*/
+  padding: 15px 0; /*Definindo o espaço entre a borda e o conteudo interno do loco*/
+
+  position: fixed; /*Definindo que a posicao do elemento sera fixa em relação ao navegador*/
+  top: 0; /*Definindo que ele não terá espaço entre a borda do navegador superior e o elemento.*/
+}
+
+.header_menu {
+  text-align: right; /*Definindo o alinhamento do texto / elemento dentro do header_menu (nav) para a direita*/
+}
+
+.header_menu ul li {
+  display: inline-block; /*Definindo o comportamento do display para inline-block (apresenta-se em linha, na linha com os outros elementos e aceita alterar a sua dimensão)*/
+  margin-left: 20px; /*Definindo a maren do lado esquerdo entre cada li (list-item) para 20px como uma gutter / gap*/
+  margin-top: 22.5px; /*Defininfo a margem superior paa 22.5px, para as lis descerem até ao centro do bloco*/
+}
+
+.header_menu ul li a {
+  color: #000; /*Definindo as cores dos textos dos links para branco*/
+  text-transform: uppercase; /*Transformando o texto / letras em capitalize / upercase / maiúsculas*/
+  padding: 10px; /*Definindo a area de toque para 10px, usando o padding que é um espado interno, para crescer o elemento*/
+  font-weight: bold; /*Colocando o peso da font para bold*/
+  font-size: 14px; /*Definindo o tamanho da font*/
+  letter-spacing: 0.1em; /*Aumentando o tracking, espaço entre as letras.*/
+  line-height: 20px; /*Definindo o tamanho da linha*/
+}
+
+.header_menu ul li a:hover {
+  color: #fff; /*Definindo a cor do link com o mouse por cima do lemento.*/
+}
+
+/* Introdução */

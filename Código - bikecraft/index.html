@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bikcraft</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- Colocamos o menu no header por que ele é um cabeçalho, e queremos usar tags com semantica. -->
+	<header class="header">
+		<!-- Como vamos querer que o menu esteja centralizado com uma largura de 960px vamos devidir esse espaço de 960px usando um divisor (div). A classe .container é que vai fazer a divisão literalmente com oom a nossa grid -->
+		<div class="container">
+			<!-- Vamos colocar o logo dentro de uma ancora porque queremos que os usuarios ao clicarem nela sejam levados para a página da empresa, página inicial. -->
+			<a href="" class="grid-4">
+				<img src="./img/bikcraft.svg">
+			</a>
+
+<!-- Usamos a tag nav porque ela semanticamente é apropriada, ela indica uma area de navegação. dentro dela temos uma lista não ordenada porque os links não tem tem uma ordem concreta. -->
+			<nav class="grid-12 header_menu">
+				<ul>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="portfolio.html">Portifólio</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</body>
+
+</html>

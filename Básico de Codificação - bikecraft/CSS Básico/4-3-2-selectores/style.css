@@ -1,0 +1,28 @@
+div{
+  background-color: tomato;
+color: black;
+font-size: 1.2rem;
+}
+
+h1{
+color: white;
+
+}
+
+p{
+color: #eee;
+font-size: 1.5rem;
+}
+
+div p {
+  color: green;;
+}
+
+#numero2{
+background-color: thistle;
+color: black;
+}
+
+.classe{
+  border: blue solid 5px;
+}
