@@ -2,15 +2,55 @@
 body {
   font-family: Arial, Helvetica, sans-serif; /*Definindo a fonte principal e as alternativas para o elemento body e todos os seus filhos*/
 }
+p {
+  font-family: Georgina, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
+}
 
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn.btn-preto:hover {
+  color: #000;
+  border-color: #000;
+}
+
+.subtitulo {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.subtitulo::after {
+  content: ""; /*Definindo o conteudo do before e do after, porque sem conteudo eles não vao aparecer na tela.*/
+  background: #000; /*Definind a cor do background, apa o objecto aparecer*/
+  display: block; /*O padrao do before/after é ser inline, então definimos como bloco para ele ocupar uma linha inteir e podermos colocar largura e altura nele.*/
+  width: 60px;
+  height: 3px;
+  margin: 8px auto; /*Definindoo as distancias entre os separadores e o texto.*/
+}
 /* Header */
 header {
   background-color: #fec63e; /*Colocando a cor do fundo*/
   width: 100%; /*Definindo o comprimento do bloco*/
   padding: 15px 0; /*Definindo o espaço entre a borda e o conteudo interno do loco*/
-
   position: fixed; /*Definindo que a posicao do elemento sera fixa em relação ao navegador*/
   top: 0; /*Definindo que ele não terá espaço entre a borda do navegador superior e o elemento.*/
+z-index: 10;
 }
 
 .header_menu {
@@ -38,3 +78,94 @@ header {
 }
 
 /* Introdução */
+.introducao {
+  margin-top: 96.39px; /*Damos uma margin superior para o conteudo não ficar por baixo do menu, porque o menu tem um posicionamento fixo, ele não ocupa espaço como o elemento que tem o posicionamento relativo ou static*/
+  width: 100%; /*Definimoc a largura como 100% para o elemento se esticar de ponta a ponta*/
+  height: 380px; /*Definimos a altura que temos no nosso design XD*/
+  background-size: cover; /*Definimo o background como cober para ele cobrir toda a tela. */
+  background: #fec63e url("./../img/bg.jpg") no-repeat center; /*Definimos a cor de fundo para caso a imagem não esteja lá e definimos a url(Universal Resource Location) para a imagem, por fim colocamos que a imagem não deve se repitir e a posicao que ela deve mostrar deverá começar sempre do centro da imagem*/
+  text-align: center;
+  padding-top: 60px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-externo {
+  max-width: 320px; /*Comprimento maximo que o componenntes pode atingir.*/
+  margin: 0 auto; /*Alinhando o componente no centtro.*/
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.quote-externo p {
+  font-style: italic;
+}
+.quote-externo p::before,
+.quote-externo p::after {
+  content: ""; /*Definindo o conteudo do before e do after, porque sem conteudo eles não vao aparecer na tela.*/
+  background: #fff; /*Definind a cor do background, apa o objecto aparecer*/
+  display: block; /*O padrao do before/after é ser inline, então definimos como bloco para ele ocupar uma linha inteir e podermos colocar largura e altura nele.*/
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 10px auto; /*Definindoo as distancias entre os separadores e o texto.*/
+}
+
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/*Produtos*/
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+margin-top: 20px;
+}
+
+.produtos_lista h3::after{
+  content: ""; /*Definindo o conteudo do before e do after, porque sem conteudo eles não vao aparecer na tela.*/
+  background: #000; /*Definind a cor do background, apa o objecto aparecer*/
+  display: block; /*O padrao do before/after é ser inline, então definimos como bloco para ele ocupar uma linha inteir e podermos colocar largura e altura nele.*/
+  width: 60px;
+  height: 3px;
+  margin: 3px auto 10px auto;
+}
+
+.produtos_lista p{
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icon {
+  background: #000;
+  padding: 20px;
+}
+
+.call{
+text-align: center;
+padding-top: 40px;
+clear: both; /*Colocamos isso porque o elemnto estava a esticar-se para baixo do elemtno ascendente por causa do float.*/
+}
+
+.call p{
+  margin-bottom: 20px;
+}

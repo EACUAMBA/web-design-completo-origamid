@@ -21,7 +21,7 @@
 				<img src="./img/bikcraft.svg">
 			</a>
 
-<!-- Usamos a tag nav porque ela semanticamente é apropriada, ela indica uma area de navegação. dentro dela temos uma lista não ordenada porque os links não tem tem uma ordem concreta. -->
+			<!-- Usamos a tag nav porque ela semanticamente é apropriada, ela indica uma area de navegação. dentro dela temos uma lista não ordenada porque os links não tem tem uma ordem concreta. -->
 			<nav class="grid-12 header_menu">
 				<ul>
 					<li><a href="sobre.html">Sobre</a></li>
@@ -32,6 +32,56 @@
 			</nav>
 		</div>
 	</header>
+
+	<!-- Usamos aqui secção porque esta é uma area nova do site, uma area que devide o meno de outros conteúdos. -->
+	<section class="introducao">
+		<!-- Usamos uma div porque queremos que o conteudo esteja entre os 960px que definimos como conteiner. -->
+		<div class="conteiner">
+			<h1>Bicicletas Feitas a Mão</h1>
+			<!-- Colocamos a classe porque queremos que seja tratado como um link externo, poderiamos ter usado outras tags, como div, mas a tag blockquote tem um impacto semantico maior. -->
+			<blockquote class="quote-externo">
+				<p>"não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
+				<!-- Usamoa para indicar o dono da citacao, quem citou. -->
+				<cite>
+					William Morris
+				</cite>
+			</blockquote>
+			<!-- Colocamos a classe btn para esterilizarmos melhor o botao. -->
+			<a href="produtos.html" class="btn">Orçamento</a>
+		</div>
+	</section>
+
+	<section class="container produtos">
+		<h2 class="subtitulo">Produtos</h2>
+		<ul class="produtos_lista">
+			<li class="grid-1-3">
+				<div class="produtos_icon">
+					<img src="./img/produtos/passeio.svg" alt="Bikecraft - passeio">
+				</div>
+				<h3>Passeio</h3>
+				<p>Ainda assim, existem dúvidas a respeito de como a nessecidade de renovacao.</p>
+			</li>
+
+			<li class="grid-1-3">
+				<div class="produtos_icon">
+					<img src="./img/produtos/esporte.svg" alt="Bikecraft - passeio">
+				</div>
+				<h3>Esporte</h3>
+				<p>Ainda assim, existem dúvidas a respeito de como a nessecidade de renovacao.</p>
+			</li>
+			<li class="grid-1-3">
+				<div class="produtos_icon">
+					<img src="./img/produtos/retro.svg" alt="Bikecraft - passeio">
+				</div>
+				<h3>Retrô</h3>
+				<p>Ainda assim, existem dúvidas a respeito de como a nessecidade de renovacao.</p>
+			</li>
+		</ul>
+<div class="call">
+<p>clique aqui e veja os detalhes dos produtos</p>
+<a href="produtos.html" class="btn btn-preto">Produtos</a>
+</div>
+	</section>
 </body>
 
 </html>
