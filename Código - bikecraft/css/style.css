@@ -6,7 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif; /*Definindo a fonte principal e as alternativas para o elemento body e todos os seus filhos*/
 }
 p {
-  font-family: Georgina, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
   line-height: 20px;
 }
