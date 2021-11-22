@@ -153,7 +153,7 @@ line-height: 30px;
 padding-left: 10px;
 }
 
-.orcamento_dados span.dados_email{
+.orcamento_dados span:nth-of-type(even){
 margin-bottom: 40px;
 }
 
