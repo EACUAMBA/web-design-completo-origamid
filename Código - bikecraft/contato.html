@@ -3,13 +3,15 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Bikcraft - Sobre</Source>
+	<title>Bikcraft - Sobre
 	</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/contato.css">
+<link rel="stylesheet" href="css/responsivo.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -38,14 +40,14 @@
 	<!-- Usamos aqui secção porque esta é uma area nova do site, uma area que devide o meno de outros conteúdos. -->
 	<section class="introducao_interna introducao_contato">
 		<div class="container">
-			<h1>Contato</h1>
-			<p>tire suas dúvidas com a gente</p>
+			<h1 class="fadeInDown" data-anime="400">Contato</h1>
+			<p class="fadeInDown" data-anime="800">tire suas dúvidas com a gente</p>
 		</div>
 	</section>
 	<!-- Terminando a secao introducao__interna -->
 
 
-	<section class="contato container">
+	<section class="contato container fadeInDown" data-anime="1200">
 		<form action="" class="grid-8 contato_form">
 			<label for="nome">Nome</label>
 			<input type="text" id="nome">
@@ -62,7 +64,7 @@
 			<button class="enviar_orcamento btn btn-preto">Enviar</button>
 		</form>
 
-		<div class="grid-8 contato_dados">
+		<div class="grid-8 contato_dados fadeInDown" data-anime="1200">
 			<h3>Dados</h3>
 			<span>(+258) 842 473 772</span>
 			<span>edilsoncuamba@gmail.com</span>
@@ -83,7 +85,7 @@
 	</section>
 	<!-- Fim secção contato -->
 
-<section class="container contato_mapa">
+<section class="container contato_mapa fadeInDown" data-anime="1800">
 <!-- Colocamos o grid porque queremos que ele alinhe com o formulario, para isso devemos coloar o grid, pois ele adiciona umas margens, de 10 pixels de cada lado. -->
 <a href="https://www.eacuamba.com" class="grid-16"><img src="./img/endereco-bikcraft.jpg" alt="Endereço da bikcraft."></a>
 </section>
@@ -140,6 +142,10 @@
 			</div>
 		</div>
 	</footer>
+
+<script src="./js/simple-slide.js"></script>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/produtos.css">
+<link rel="stylesheet" href="css/responsivo.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -37,13 +39,13 @@
 	<!-- Usamos aqui secção porque esta é uma area nova do site, uma area que devide o meno de outros conteúdos. -->
 	<section class="introducao_interna introducao_produtos">
 		<div class="container">
-			<h1>Produtos</h1>
-			<p>conheça todos os nossos produtos</p>
+			<h1 class="fadeInDown" data-anime="400">Produtos</h1>
+			<p class="fadeInDown" data-anime="800">conheça todos os nossos produtos</p>
 		</div>
 	</section>
 	<!-- Terminando a secao introducao__interna -->
 
-	<section class="container produto_item">
+	<section class="container produto_item fadeInDown" data-anime="1200">
 		<div class="grid-11 produto_img">
 			<img src="img/produtos/bikcraft-passeio-1.jpg" alt="Foto de uma bike feita para passeio.">
 			<h2>Passeio</h2>
@@ -67,7 +69,7 @@
 	</section>
 	<!-- Termina a secção produto item -->
 
-	<section class="container produto_item">
+	<section class="container produto_item fadeInDown" data-anime="1600">
 		<div class="grid-11 produto_img">
 			<img src="img/produtos/bikcraft-esporte-1.jpg" alt="Foto de uma bike feita para esporte.">
 			<h2>Esporte</h2>
@@ -92,7 +94,7 @@
 	<!-- Termina a secção produto item -->
 
 
-	<section class="container produto_item">
+	<section class="container produto_item fadeInDown" data-anime="2000">
 		<div class="grid-11 produto_img">
 			<img src="img/produtos/bikcraft-retro-1.jpg" alt="Foto de uma bike feita para Retrô.">
 			<h2>Passeio</h2>
@@ -116,7 +118,7 @@
 	</section>
 	<!-- Termina a secção produto item -->
 
-	<section class="orcamento">
+	<section class="orcamento fadeInDown" data-anime="2400">
 		<div class="container">
 			<h2 class="subtitulo">Orçamento</h2>
 
@@ -207,6 +209,10 @@
 			</div>
 		</div>
 	</footer>
+
+<script src="./js/simple-slide.js"></script>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

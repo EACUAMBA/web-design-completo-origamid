@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+	<script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -37,25 +39,43 @@
 	<!-- Usamos aqui secção porque esta é uma area nova do site, uma area que devide o meno de outros conteúdos. -->
 	<section class="introducao_interna introducao_portfolio">
 		<div class="container">
-			<h1>Portifólio</h1>
-			<p>conheça mais o nosso portifólio</p>
+			<h1 class="fadeInDown" data-anime="400">Portifólio</h1>
+			<p class="fadeInDown" data-anime=800">conheça mais o nosso portifólio</p>
 		</div>
 	</section>
 	<!-- Terminando a secao introducao__interna -->
 
-	<section class="container">
+	<section class="container  fadeInDown" data-slide="quote" data-anime="1200">
 		<blockquote class="quote_clientes">
-			<p>“Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.”</p>
-<cite>Barbara Moss</cite>
+			<p>“Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão perdendo. A precisão é absurda e a
+				velocidade transcendental. Nunca vida nada igual.”</p>
+			<cite>Bernardo</cite>
+		</blockquote>
+
+		<blockquote class="quote_clientes">
+			<p>“Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a minha companheira mais fiel, nunca me
+				traiu e está sempre a minha disposição.”</p>
+			<cite>King Mock</cite>
+		</blockquote>
+
+		<blockquote class="quote_clientes">
+			<p>“Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta
+				atividade. Recomendo à todos que amo.”</p>
+			<cite>Barbara Moss</cite>
 		</blockquote>
 	</section>
 
-	<section class="portfolio">
-		<div class="container">
-			<h2 class="subtitulo">Portifólio</h2>
+	<section class="portfolio fadeInDown" data-anime="1600">
+		<h2 class="subtitulo">Portifólio</h2>
+		<div class="container" data-slide="portfolio">
 			<ul class="portifolio_lista">
 				<li class="grid-8"><img src="./img/portfolio/retro.jpg" alt="Bicicletas retro."></li>
 				<li class="grid-8"><img src="./img/portfolio/passeio.jpg" alt="Bicicletas passeio."></li>
+				<li class="grid-16"><img src="./img/portfolio/esporte.jpg" alt="Bicicletas esporte."></li>
+			</ul>
+			<ul class="portifolio_lista">
+				<li class="grid-8"><img src="./img/portfolio/passeio.jpg" alt="Bicicletas passeio."></li>
+				<li class="grid-8"><img src="./img/portfolio/retro.jpg" alt="Bicicletas retro."></li>
 				<li class="grid-16"><img src="./img/portfolio/esporte.jpg" alt="Bicicletas esporte."></li>
 			</ul>
 		</div>
@@ -114,6 +134,10 @@
 			</div>
 		</div>
 	</footer>
+
+<script src="./js/simple-slide.js"></script>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

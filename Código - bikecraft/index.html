@@ -4,10 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bikcraft</title>
+
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+	<script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -17,7 +20,7 @@
 		<!-- Como vamos querer que o menu esteja centralizado com uma largura de 960px vamos devidir esse espaço de 960px usando um divisor (div). A classe .container é que vai fazer a divisão literalmente com oom a nossa grid -->
 		<div class="container">
 			<!-- Vamos colocar o logo dentro de uma ancora porque queremos que os usuarios ao clicarem nela sejam levados para a página da empresa, página inicial. -->
-			<a href="" class="grid-4">
+			<a href="" class="grid-4 logo">
 				<img src="./img/bikcraft.svg">
 			</a>
 
@@ -37,9 +40,9 @@
 	<section class="introducao">
 		<!-- Usamos uma div porque queremos que o conteudo esteja entre os 960px que definimos como conteiner. -->
 		<div class="conteiner">
-			<h1>Bicicletas Feitas a Mão</h1>
+			<h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
 			<!-- Colocamos a classe porque queremos que seja tratado como um link externo, poderiamos ter usado outras tags, como div, mas a tag blockquote tem um impacto semantico maior. -->
-			<blockquote class="quote-externo">
+			<blockquote data-anime="800"  class="quote-externo fadeInDown">
 				<p>"não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
 				<!-- Usamoa para indicar o dono da citacao, quem citou. -->
 				<cite>
@@ -47,11 +50,11 @@
 				</cite>
 			</blockquote>
 			<!-- Colocamos a classe btn para esterilizarmos melhor o botao. -->
-			<a href="produtos.html" class="btn">Orçamento</a>
+			<a href="produtos.html" class="btn" data-anime="1200">Orçamento</a>
 		</div>
 	</section>
 
-	<section class="container produtos">
+	<section class="container produtos fadeInDown" data-anime="1600">
 		<h2 class="subtitulo">Produtos</h2>
 		<ul class="produtos_lista">
 			<li class="grid-1-3">
@@ -77,13 +80,13 @@
 				<p>Ainda assim, existem dúvidas a respeito de como a nessecidade de renovacao.</p>
 			</li>
 		</ul>
-		<div class="call">
+		<div class="call" data-anime="2000>
 			<p>clique aqui e veja os detalhes dos produtos</p>
 			<a href="produtos.html" class="btn btn-preto">Produtos</a>
 		</div>
 	</section>
 	<!--produtos termina aqui!-->
-	<section class="portfolio">
+	<section class="portfolio fadeInDown" data-anime="2000">
 		<div class="container">
 			<h2 class="subtitulo">Portifólio</h2>
 			<ul class="portifolio_lista">
@@ -99,7 +102,7 @@
 	</section>
 	<!-- Termina a seccão de portifolio-->
 
-	<section class="qualidade container">
+	<section class="qualidade container fadeInDown" data-anime="2400">
 		<h2 class="subtitulo">Qualidade</h2>
 		<img class="" src="./img/bikcraft-qualidade.svg" alt="Qualidades da Bikecraft">
 		<ul class="qualidade_lista">
@@ -128,7 +131,7 @@
 		</div>
 	</section>
 	<!--Termina a secção de qualidade-->
-	<section class="quebra">
+	<section class="quebra fadeInDown" data-anime="2400">
 		<blockquote class="quote-externo container">
 			<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”
 			</p>
@@ -140,7 +143,7 @@
 	</section><!-- Termina secção da quebra-->
 
 	<footer>
-		<div class="footer">
+		<div class="footer fadeInDown" data-anime="2800">
 			<div class="container">
 				<div class="grid-8 footer_historia">
 					<h3>Nossa Historia</h3>
@@ -161,25 +164,28 @@
 					<ul>
 						<li><a href="https://www.facebook.com/eacuamba" target="_blank"><img src="./img/redes-sociais/facebook.svg"
 									alt="Facebook"></a></li>
-						<li><a href="https://www.facebook.com/eacuamba" target="_blank"><img
-									src="./img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
+						<li><a href="https://www.facebook.com/eacuamba" target="_blank"><img src="./img/redes-sociais/instagram.svg"
+									alt="Instagram"></a></li>
 						<li><a href="https://www.facebook.com/eacuamba" target="_blank"><img src="./img/redes-sociais/twitter.svg"
 									alt="Twitter"></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-<div class="copy">
-<div class="container">
-<p class="grid-8">
-Bikcraft 2021 - Alguns direitos reservados.
-</p>
-<p class="grid-8 autor">
-Feito por <b>Edilson Alexandre Cuamba</b>.
-</p>
-</div>
-</div>
+		<div class="copy">
+			<div class="container">
+				<p class="grid-8">
+					Bikcraft 2021 - Alguns direitos reservados.
+				</p>
+				<p class="grid-8 autor">
+					Feito por <b>Edilson Alexandre Cuamba</b>.
+				</p>
+			</div>
+		</div>
 	</footer>
+<script src="./js/simple-slide.js"></script>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

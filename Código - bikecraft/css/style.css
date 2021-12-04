@@ -13,6 +13,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%; /*As imagem vai se adaptar para o tamanho dos elementos que estão contidos. Elas estão fluidas, isso significa que se tivermos uma imagem de 200px dentro de um bloco de 100 px ela vai ocupar 100px e não vai passar*/
 }
 
 .btn {
@@ -84,8 +85,8 @@ header {
   color: #fff; /*Definindo a cor do link com o mouse por cima do lemento.*/
 }
 
-.header_menu ul li a.menu_ativo{
-color: white;
+.header_menu ul li a.menu_ativo {
+  color: white;
 }
 
 /* Introdução */
@@ -139,22 +140,22 @@ color: white;
 .introducao_interna {
   height: 160px;
   margin-top: 92px;
-text-align: center;
-padding-top: 35px;
-color: white;
+  text-align: center;
+  padding-top: 35px;
+  color: white;
 }
 .introducao_interna h1 {
   font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.introducao_interna h1::after{
-content: "";
-background-color: white;
-width: 60px;
-height: 2px;
-display: block;
-margin: 10px auto;
+.introducao_interna h1::after {
+  content: "";
+  background-color: white;
+  width: 60px;
+  height: 2px;
+  display: block;
+  margin: 10px auto;
 }
 
 /*Produtos*/
@@ -282,7 +283,6 @@ margin: 10px auto;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
-
 }
 
 .qualidade_lista h3::after {
@@ -370,4 +370,58 @@ margin: 10px auto;
   text-align: end;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 18px;
+}
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+.js [data-slide-nav] {
+  margin: 20px 0 0;
+  display: block;
+  text-align: center;
+}
+.js [data-slide-nav] button {
+  display: inline-block;
+  border: none;
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  overflow: hidden;
+  background-color: #d1d1d1;
+  border-radius: 6px;
+  margin: 0 4px;
+  text-indent: -50px;
+
+  color: white;
+}
+
+.js [data-slide-nav] button.active {
+  background-color: var(--amarelo);
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown{
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+transform: none;
+  transition: opacity 800ms, transform 800ms;
 }

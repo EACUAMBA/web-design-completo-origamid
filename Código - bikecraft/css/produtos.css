@@ -16,11 +16,11 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   position: relative;
-  top: -130px;
+  top: -180px;
   text-align: center;
 
   /* Para remover a sombra do elemento movido com postition relative: . */
-  margin-top: -54px;
+  margin-bottom: -54px;
 }
 
 .produto_item h2::after,
