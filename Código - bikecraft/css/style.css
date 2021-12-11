@@ -415,13 +415,19 @@ header {
   opacity: 0;
 }
 
-.js .fadeInDown{
+.js .fadeInDown {
   opacity: 0;
   transform: translate3d(0, -20px, 0);
 }
 
 .js .anime {
   opacity: 1;
-transform: none;
+  transform: none;
   transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
 }
