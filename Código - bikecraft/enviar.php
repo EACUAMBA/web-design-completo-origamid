@@ -9,7 +9,7 @@ require "./PHPMailer/src/SMTP.php";
   
 // Mudar Aqui o e-mail
 $email_envio = "edilsonacuamba@outlook.com"; // E-mail do site (ex: contato@seusite.com)
-$email_pass = "&Ed1!?0n#Cu4mb4"; // Senha do e-mail
+$email_pass = "senha"; // Senha do e-mail
 
 $site_name = "Bikcraft"; // Nome do Site
 $site_url = "www.bikcraft.eacuamba.com"; // URL do Site
